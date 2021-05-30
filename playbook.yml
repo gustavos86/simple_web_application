@@ -11,8 +11,8 @@
         state: present
       with_items:
         - "epel-release"
-        - "python"
-        - "python-devel"
+        - "python38"
+        - "python38-devel"
 
     - name: Install MySQL community repository
       yum:
@@ -43,12 +43,12 @@
 
     - name: Install mysql-python package
       yum:
-        name: MySQL-python
+        name: python38-PyMySQL
         state: present
 
     - name: Install pip
       yum:
-        name: "python-pip"
+        name: "python3-pip"
         state: present
 
     - name: Install required Python libraries
