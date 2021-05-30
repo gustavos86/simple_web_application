@@ -1,2 +1,1 @@
-db_and_web_server1 ansible_host=192.168.57.5 ansible_user=osboxes ansible_ssh_pass=osboxes.org
-db_and_web_server1 ansible_host=192.168.57.6 ansible_user=osboxes ansible_ssh_pass=osboxes.org
+centosVM1 ansible_host=192.168.22.128 ansible_user=user ansible_ssh_pass=cisco123
