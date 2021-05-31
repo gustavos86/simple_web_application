@@ -10,6 +10,11 @@
         name: "@Development tools"
         state: present
 
+    - name: install wget
+      yum:
+        name: wget
+        state: present
+
     - name: Upgrade zlib to latest version
       shell: "{{ item }}"
       args:
